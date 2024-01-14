@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  /*colors*/
+  --color_White: hsl(0, 0%, 100%);
+   --Light_gray: hsl(212, 45%, 89%);
+  --Grayish_blue: hsl(220, 15%, 55%);
+--Dark_blue: hsl(218, 44%, 22%);
+
+  /* fonts*/
+  --font-paragraph: 15px;
+  /*font family*/
+  --ff: 'Outfit', sans-serif;
+  
+  /*font weight*/
+  --fw1: 400;
+  --fw2: 700;
+  
+}
+body{
+  font-family: var(--ff);
+  background: var(--Light_gray);
+  height: 100vh;
+}
+
+section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 100vh;
+}
+section .section_container{
+  background: var(--color_White);
+  height: auto;
+  width: auto;
+  margin: auto;
+  border-radius: 25px;
+  margin: auto 1rem;
+}
+section .section_container .section_img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  
+}
+section .section_container .section_img img{
+  height: auto;
+  width: 290px;
+  display: flex;
+  border-radius: 20px;
+} 
+section .section_container .section_content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 0 1.5rem ;
+  width: 310px;
+}
+section .section_container .section_content h2{
+  font-weight: var(--fw2);
+  padding: 0.5rem 0 1rem;
+}
+section .section_container .section_content p{
+  font-weight: var(--fw1);
+  padding: 0.5rem 0 1rem;
+  font-size: var(--font-paragraph);
+}
